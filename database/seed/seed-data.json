@@ -1,0 +1,203 @@
+{
+  "_note": "Snapshot of the existing demo content (mirrors src/lib/* and src/lib/admin/*). Used by backend/src/db/seed.ts. Slugs, titles, taxonomy and navigation match the prototype so the seeded database reproduces the current site.",
+  "authors": [
+    {
+      "slug": "maya-reyes",
+      "name": "Maya Reyes",
+      "professionalTitle": "Food & Recipes Editor",
+      "profileImage": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop",
+      "shortBio": "Recipe developer and food stylist focused on seasonal, make-ahead baking.",
+      "longBio": ["Maya has developed and tested recipes for over a decade.", "She specialises in holiday baking and approachable weeknight cooking."],
+      "expertise": [{ "label": "Baking" }, { "label": "Seasonal recipes" }],
+      "status": "active",
+      "socialLinks": [{ "platform": "Instagram", "href": "https://instagram.com" }],
+      "yearsExperience": 11
+    },
+    {
+      "slug": "amanda-thompson",
+      "name": "Amanda Thompson",
+      "professionalTitle": "Weddings & Celebrations Editor",
+      "profileImage": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
+      "shortBio": "Event stylist covering weddings, showers and seasonal tablescapes.",
+      "longBio": ["Amanda styles celebrations that feel warm and personal."],
+      "expertise": [{ "label": "Weddings" }, { "label": "Tablescapes" }],
+      "status": "active",
+      "socialLinks": [{ "platform": "Pinterest", "href": "https://pinterest.com" }],
+      "yearsExperience": 9
+    },
+    {
+      "slug": "alicia-butner",
+      "name": "Alicia Butner",
+      "professionalTitle": "Beauty & Nails Editor",
+      "profileImage": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop",
+      "shortBio": "Nail artist and beauty writer covering seasonal manicures and trends.",
+      "longBio": ["Alicia translates runway nail trends into wearable at-home looks."],
+      "expertise": [{ "label": "Nail art" }, { "label": "Seasonal beauty" }],
+      "status": "active",
+      "socialLinks": [{ "platform": "Instagram", "href": "https://instagram.com" }],
+      "yearsExperience": 7
+    },
+    {
+      "slug": "jordan-blake",
+      "name": "Jordan Blake",
+      "professionalTitle": "DIY & Crafts Editor",
+      "profileImage": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+      "shortBio": "Maker and craft designer specialising in seasonal decor projects.",
+      "longBio": ["Jordan designs approachable craft projects for every skill level."],
+      "expertise": [{ "label": "Crafts" }, { "label": "Home decor" }],
+      "status": "active",
+      "socialLinks": [{ "platform": "YouTube", "href": "https://youtube.com" }],
+      "yearsExperience": 8
+    }
+  ],
+  "taxonomy": [
+    { "kind": "category", "name": "Recipes", "slug": "recipes", "indexable": true },
+    { "kind": "category", "name": "DIY & Crafts", "slug": "diy", "indexable": true },
+    { "kind": "category", "name": "Weddings", "slug": "weddings", "indexable": true },
+    { "kind": "category", "name": "Beauty", "slug": "beauty", "indexable": true },
+    { "kind": "category", "name": "Christmas", "slug": "christmas", "indexable": true },
+    { "kind": "category", "name": "Home & Decor", "slug": "home-decor", "indexable": true },
+    { "kind": "occasion", "name": "Christmas", "slug": "christmas", "indexable": true },
+    { "kind": "occasion", "name": "Halloween", "slug": "halloween", "indexable": true },
+    { "kind": "occasion", "name": "Weddings", "slug": "weddings", "indexable": true },
+    { "kind": "occasion", "name": "Valentine's Day", "slug": "valentines", "indexable": true },
+    { "kind": "season", "name": "Fall", "slug": "fall", "indexable": true },
+    { "kind": "season", "name": "Winter", "slug": "winter", "indexable": true },
+    { "kind": "season", "name": "Spring", "slug": "spring", "indexable": true },
+    { "kind": "season", "name": "Summer", "slug": "summer", "indexable": true },
+    { "kind": "tag", "name": "Make-ahead", "slug": "make-ahead", "indexable": true },
+    { "kind": "tag", "name": "Beginner-friendly", "slug": "beginner-friendly", "indexable": true },
+    { "kind": "style", "name": "Rustic", "slug": "rustic", "indexable": true },
+    { "kind": "style", "name": "Modern", "slug": "modern", "indexable": true },
+    { "kind": "audience", "name": "Families", "slug": "families", "indexable": true }
+  ],
+  "content": [
+    {
+      "type": "article", "slug": "christmas-nails", "title": "25 Christmas Nail Ideas for a Festive Manicure",
+      "status": "published", "authorSlug": "alicia-butner", "authorName": "Alicia Butner",
+      "category": "Beauty", "excerpt": "From candy-cane tips to snowy French sets, the prettiest holiday nails to try this season.",
+      "featuredImage": "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1200&h=800&fit=crop",
+      "occasions": ["christmas"], "seasons": ["winter"], "tags": ["beginner-friendly"], "featured": true,
+      "detail": { "readTime": "8 min", "seo": { "schemaType": "Article" } }
+    },
+    {
+      "type": "article", "slug": "wedding-tables", "title": "Wedding Table Settings That Feel Effortlessly Elegant",
+      "status": "published", "authorSlug": "amanda-thompson", "authorName": "Amanda Thompson",
+      "category": "Weddings", "excerpt": "Layered linens, seasonal florals and the little details that make a tablescape sing.",
+      "featuredImage": "https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=800&fit=crop",
+      "occasions": ["weddings"], "seasons": ["spring"], "tags": [], "featured": false,
+      "detail": { "readTime": "10 min", "seo": { "schemaType": "Article" } }
+    },
+    {
+      "type": "article", "slug": "halloween-food", "title": "Spooky-Cute Halloween Food Ideas for a Crowd",
+      "status": "published", "authorSlug": "maya-reyes", "authorName": "Maya Reyes",
+      "category": "Recipes", "excerpt": "Playful, not gross — party bites and treats kids and adults both love.",
+      "featuredImage": "https://images.unsplash.com/photo-1509557965875-b88c97052f0e?w=1200&h=800&fit=crop",
+      "occasions": ["halloween"], "seasons": ["fall"], "tags": ["families"], "featured": false,
+      "detail": { "readTime": "7 min", "seo": { "schemaType": "Article" } }
+    },
+    {
+      "type": "recipe", "slug": "christmas-sugar-cookies", "title": "Soft Cut-Out Christmas Sugar Cookies",
+      "status": "published", "authorSlug": "maya-reyes", "authorName": "Maya Reyes",
+      "category": "Recipes", "excerpt": "Buttery, hold-their-shape sugar cookies that are made for decorating.",
+      "featuredImage": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=1200&h=800&fit=crop",
+      "occasions": ["christmas"], "seasons": ["winter"], "tags": ["make-ahead"], "featured": true,
+      "detail": { "prepTime": "30 min", "cookTime": "10 min", "servings": 24, "seo": { "schemaType": "Recipe" } }
+    },
+    {
+      "type": "recipe", "slug": "halloween-punch", "title": "Bubbling Green Halloween Party Punch",
+      "status": "published", "authorSlug": "maya-reyes", "authorName": "Maya Reyes",
+      "category": "Recipes", "excerpt": "A fizzy, spooky punch that's ready in five minutes — alcohol optional.",
+      "featuredImage": "https://images.unsplash.com/photo-1541976076758-347942db1970?w=1200&h=800&fit=crop",
+      "occasions": ["halloween"], "seasons": ["fall"], "tags": ["families"], "featured": false,
+      "detail": { "prepTime": "5 min", "servings": 12, "seo": { "schemaType": "Recipe" } }
+    },
+    {
+      "type": "recipe", "slug": "garlic-pasta", "title": "20-Minute Garlic Butter Pasta",
+      "status": "published", "authorSlug": "maya-reyes", "authorName": "Maya Reyes",
+      "category": "Recipes", "excerpt": "A weeknight staple with pantry ingredients and huge flavour.",
+      "featuredImage": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=1200&h=800&fit=crop",
+      "occasions": [], "seasons": [], "tags": ["make-ahead"], "featured": false,
+      "detail": { "prepTime": "5 min", "cookTime": "15 min", "servings": 4, "seo": { "schemaType": "Recipe" } }
+    },
+    {
+      "type": "diy", "slug": "macrame-snowflakes", "title": "DIY Macramé Snowflake Ornaments",
+      "status": "published", "authorSlug": "jordan-blake", "authorName": "Jordan Blake",
+      "category": "DIY & Crafts", "excerpt": "Delicate knotted snowflakes to hang on the tree or gift-wrap.",
+      "featuredImage": "https://images.unsplash.com/photo-1512909006721-3d6018887383?w=1200&h=800&fit=crop",
+      "occasions": ["christmas"], "seasons": ["winter"], "tags": ["beginner-friendly"], "featured": true,
+      "detail": { "difficulty": "Easy", "timeRequired": "45 min", "seo": { "schemaType": "HowTo" } }
+    },
+    {
+      "type": "diy", "slug": "pumpkin-painting", "title": "No-Carve Painted Pumpkins for Fall",
+      "status": "published", "authorSlug": "jordan-blake", "authorName": "Jordan Blake",
+      "category": "DIY & Crafts", "excerpt": "Mess-free, kid-friendly pumpkin decorating with paint and patterns.",
+      "featuredImage": "https://images.unsplash.com/photo-1570586437263-ab629fccc818?w=1200&h=800&fit=crop",
+      "occasions": ["halloween"], "seasons": ["fall"], "tags": ["families", "beginner-friendly"], "featured": false,
+      "detail": { "difficulty": "Easy", "timeRequired": "30 min", "seo": { "schemaType": "HowTo" } }
+    },
+    {
+      "type": "diy", "slug": "wedding-centerpiece", "title": "DIY Seasonal Wedding Centerpiece",
+      "status": "published", "authorSlug": "jordan-blake", "authorName": "Jordan Blake",
+      "category": "DIY & Crafts", "excerpt": "A lush, budget-friendly centerpiece you can assemble the day before.",
+      "featuredImage": "https://images.unsplash.com/photo-1478146896981-b80fe463b330?w=1200&h=800&fit=crop",
+      "occasions": ["weddings"], "seasons": ["spring"], "tags": ["make-ahead"], "featured": false,
+      "detail": { "difficulty": "Intermediate", "timeRequired": "90 min", "seo": { "schemaType": "HowTo" } }
+    }
+  ],
+  "nav": {
+    "desktop": [
+      { "label": "Home", "destinationType": "home", "url": "/" },
+      { "label": "Occasions", "destinationType": "category", "url": "/christmas" },
+      { "label": "Weddings", "destinationType": "category", "url": "/weddings" },
+      { "label": "Food & Recipes", "destinationType": "category", "url": "/recipes" },
+      { "label": "Beauty", "destinationType": "category", "url": "/beauty" },
+      { "label": "DIY & Crafts", "destinationType": "category", "url": "/diy" },
+      { "label": "Home & Decor", "destinationType": "category", "url": "/home-decor" },
+      {
+        "label": "More", "destinationType": "external", "url": "/more",
+        "menu": {
+          "groups": [
+            { "label": "Discover", "items": [ { "label": "Gifts", "url": "/gifts" }, { "label": "Ideas & Advice", "url": "/ideas" } ] },
+            { "label": "Popular", "items": [ { "label": "Seasonal Crafts", "url": "/seasonal-crafts" }, { "label": "Kids Crafts", "url": "/kids-crafts" }, { "label": "Party Decor", "url": "/party-decor" } ] }
+          ]
+        }
+      }
+    ]
+  },
+  "footer": {
+    "columns": [
+      { "id": "explore", "title": "Explore", "links": [ { "id": "l1", "label": "Recipes", "url": "/recipes" }, { "id": "l2", "label": "DIY & Crafts", "url": "/diy" }, { "id": "l3", "label": "Weddings", "url": "/weddings" }, { "id": "l4", "label": "Beauty", "url": "/beauty" } ] },
+      { "id": "seasonal", "title": "Seasonal", "links": [ { "id": "l5", "label": "Christmas", "url": "/christmas" }, { "id": "l6", "label": "Halloween", "url": "/halloween" }, { "id": "l7", "label": "Fall", "url": "/fall" }, { "id": "l8", "label": "Valentine's", "url": "/valentines" } ] },
+      { "id": "company", "title": "Company", "links": [ { "id": "l9", "label": "About", "url": "/about" }, { "id": "l10", "label": "Contact", "url": "/contact" }, { "id": "l11", "label": "Authors", "url": "/authors" } ] },
+      { "id": "legal", "title": "Legal", "links": [ { "id": "l12", "label": "Privacy Policy", "url": "/privacy" }, { "id": "l13", "label": "Terms", "url": "/terms" }, { "id": "l14", "label": "Cookies", "url": "/cookies" } ] }
+    ],
+    "social": [ { "id": "s1", "label": "Pinterest", "url": "https://pinterest.com" }, { "id": "s2", "label": "Instagram", "url": "https://instagram.com" }, { "id": "s3", "label": "YouTube", "url": "https://youtube.com" } ],
+    "legal": [ { "id": "g1", "label": "Privacy", "url": "/privacy" }, { "id": "g2", "label": "Terms", "url": "/terms" } ],
+    "newsletterEnabled": true,
+    "description": "A warm, image-first home for seasonal ideas, celebrations, recipes and everyday inspiration — all year round.",
+    "copyright": "© Marigold & Maple. All rights reserved."
+  },
+  "homepageSections": [
+    { "name": "Hero", "type": "featured", "heading": "Seasonal Spotlight", "order": 0, "enabled": true, "status": "active", "config": {} },
+    { "name": "Trending", "type": "trending", "heading": "Trending Now", "order": 1, "enabled": true, "status": "active", "config": {} },
+    { "name": "Recipes", "type": "recipe-collection", "heading": "Fresh from the Kitchen", "order": 2, "enabled": true, "status": "active", "config": { "category": "recipes" } },
+    { "name": "Weddings", "type": "category-collection", "heading": "Wedding Inspiration", "order": 3, "enabled": true, "status": "active", "config": { "category": "weddings" } },
+    { "name": "DIY", "type": "diy-collection", "heading": "Make It Yourself", "order": 4, "enabled": true, "status": "active", "config": { "category": "diy" } },
+    { "name": "Newsletter", "type": "newsletter", "heading": "Get seasonal ideas every Sunday", "order": 5, "enabled": true, "status": "active", "config": {} }
+  ],
+  "collections": [
+    { "name": "Christmas Cookie Box", "slug": "christmas-cookie-box", "description": "Our favourite cookies for the holiday tin.", "type": "seasonal", "status": "published", "contentSlugs": ["christmas-sugar-cookies"] },
+    { "name": "Halloween Party", "slug": "halloween-party", "description": "Spooky-cute food and decor.", "type": "occasion", "status": "published", "contentSlugs": ["halloween-food", "halloween-punch", "pumpkin-painting"] }
+  ],
+  "redirects": [
+    { "source": "/xmas-nails", "destination": "/article/christmas-nails", "type": "301", "status": "active" }
+  ],
+  "settings": {
+    "general": { "siteName": "Marigold & Maple", "siteDescription": "Seasonal ideas, celebrations, recipes and everyday inspiration.", "canonicalDomain": "https://marigoldandmaple.com", "contactEmail": "hello@marigoldandmaple.com", "timezone": "America/New_York", "language": "en" },
+    "header": { "logoText": "Marigold & Maple", "showSearch": true, "showSocial": true, "showSubscribe": true, "subscribeLabel": "Subscribe", "announcementEnabled": true, "announcementText": "Free seasonal printables in every newsletter" },
+    "newsletter": { "visible": true, "title": "Get seasonal ideas delivered every Sunday", "description": "Recipes, celebrations, decor and pretty little projects — thoughtfully curated, never spammy.", "ctaLabel": "Subscribe", "placeholder": "you@email.com", "provider": "none", "doubleOptIn": true, "placement": "both" },
+    "seoDefaults": { "titleSuffix": " — Marigold & Maple", "robots": "index, follow", "ogImage": "", "orgName": "Marigold & Maple" },
+    "social": { "pinterest": "https://pinterest.com", "instagram": "https://instagram.com", "youtube": "https://youtube.com", "facebook": "", "x": "" }
+  }
+}

@@ -1,0 +1,116 @@
+/* =========================================================================
+   Design tokens — warm editorial identity.
+   Core identity stays fixed; only --seasonal (and its soft tint) swaps per
+   occasion. Category/occasion color lives ONLY in badges + seasonal accents.
+   ========================================================================= */
+
+:root {
+  /* Neutrals / ground */
+  --background: #faf7f2; /* warm ivory page ground */
+  --foreground: #26201b; /* warm near-black text */
+  --card: #ffffff;
+  --card-foreground: #26201b;
+
+  --secondary: #f2ece1; /* warm sand surface */
+  --secondary-foreground: #4a3f36;
+  --muted: #f2ece1;
+  --muted-foreground: #7c7064; /* captions, metadata */
+
+  /* Brand */
+  --primary: #b1543c; /* terracotta clay — fixed brand */
+  --primary-foreground: #ffffff;
+
+  /* Seasonal accent — the ONE token that changes per occasion */
+  --seasonal: #b1543c;
+  --seasonal-soft: #f7e7df; /* soft tint for highlight bands */
+  --accent: var(--seasonal);
+  --accent-foreground: #ffffff;
+
+  /* Structure */
+  --border: #e7dccb; /* warm hairline */
+  --ring: #b1543c;
+
+  /* Status */
+  --success: #3f7d54;
+  --warning: #c08a3e;
+  --error: #b23b3b;
+
+  /* Pinterest brand (fixed external brand color — used only on Pin/Save UI) */
+  --pinterest: #e60023;
+  --pinterest-hover: #c8001f;
+
+  --radius: 0.5rem;
+}
+
+/* Seasonal presets — swap by setting data-season on any wrapper. The core
+   identity (bg, text, brand primary) never moves; only the accent shifts. */
+[data-season='fall'] {
+  --seasonal: #b1543c;
+  --seasonal-soft: #f7e7df;
+}
+[data-season='christmas'] {
+  --seasonal: #2f6b4f;
+  --seasonal-soft: #e2efe7;
+}
+[data-season='valentines'] {
+  --seasonal: #c14e73;
+  --seasonal-soft: #f8e4ea;
+}
+[data-season='halloween'] {
+  --seasonal: #c1611f;
+  --seasonal-soft: #f8e8d8;
+}
+[data-season='wedding'] {
+  --seasonal: #9a7b53;
+  --seasonal-soft: #f0e8db;
+}
+
+.dark {
+  --background: #1c1815;
+  --foreground: #f3ede4;
+  --card: #262019;
+  --card-foreground: #f3ede4;
+  --secondary: #2e271f;
+  --secondary-foreground: #e0d6c8;
+  --muted: #2e271f;
+  --muted-foreground: #a99c8c;
+  --primary: #d17a60;
+  --primary-foreground: #1c1815;
+  --seasonal: #d17a60;
+  --seasonal-soft: #3a2a22;
+  --accent: var(--seasonal);
+  --accent-foreground: #1c1815;
+  --border: #3a3229;
+  --ring: #d17a60;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-seasonal: var(--seasonal);
+  --color-seasonal-soft: var(--seasonal-soft);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+  --color-pinterest: var(--pinterest);
+  --color-pinterest-hover: var(--pinterest-hover);
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Fraunces', ui-serif, Georgia, serif;
+
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 4px);
+}
